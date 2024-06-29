@@ -63,7 +63,7 @@ Eg:
 NEXT_PUBLIC_GTM = ""
 ```
 
-### Now, you have to customize user data in the `data` [folder](https://github.com/said7388/developer-portfolio/tree/main/data).
+### Now, you have to customize user data in the `data` [folder](https://github.com/rohitm95/github-portfolio/blob/master/data).
 
 Eg:
 
