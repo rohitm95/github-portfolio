@@ -22,7 +22,7 @@ function Rank() {
           </GlowCard>
           <GlowCard identifier="productive-time">
             <Image
-              src={`http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=${userData.githubUser}&theme=algolia&utcOffset=${userData.timezone}`}
+              src={`https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=${userData.githubUser}&theme=algolia&utcOffset=${userData.timezone}`}
               width={1080}
               height={560}
               alt="github productive-time"

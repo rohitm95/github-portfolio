@@ -14,7 +14,7 @@ function GitStats() {
           <GlowCard identifier="profile-details">
             <div className="bg-primary-bg">
             <Image
-              src={`http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=${userData.githubUser}&theme=algolia`}
+              src={`https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=${userData.githubUser}&theme=algolia`}
               width={1080}
               height={520}
               alt="github profile-details"
