@@ -1,5 +1,6 @@
 import { GoogleTagManager } from '@next/third-parties/google';
 import { Inter } from 'next/font/google';
+import PropTypes from 'prop-types';
 import Footer from './components/footer';
 import Navbar from './components/navbar';
 import './css/card.scss';
@@ -22,4 +23,8 @@ export default function RootLayout({ children }) {
       }
     </html>
   )
+};
+
+RootLayout.propTypes = {
+  children: PropTypes.node.isRequired,
 };

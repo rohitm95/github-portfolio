@@ -27,7 +27,7 @@ module.exports = {
         hostname: 'stardev.io',
       },
       {
-        protocol: 'http',
+        protocol: 'https',
         hostname: 'github-profile-summary-cards.vercel.app',
       },
       {
@@ -36,6 +36,8 @@ module.exports = {
       }
     ],
     dangerouslyAllowSVG: true,
-    contentDispositionType: 'attachment'
+    contentDispositionType: 'attachment',
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    unoptimized: true, // Set to true if you want to disable image optimization
   },
 };
