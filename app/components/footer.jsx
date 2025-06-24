@@ -14,6 +14,24 @@ function Footer() {
           <p className="text-sm">
             © GitHub Portfolio by <Link target="_blank" href="https://www.linkedin.com/in/rohitmamidwar/" className="text-primary-icon">Rohit Mamidwar</Link>
           </p>
+          <div className="flex items-center gap-5">
+            <Link
+              target="_blank"
+              href="https://github.com/rohitm95/github-portfolio"
+              className="flex items-center gap-2 uppercase hover:text-primary-icon"
+            >
+              <IoStar />
+              <span>Star</span>
+            </Link>
+            <Link
+              target="_blank"
+              href="https://github.com/rohitm95/github-portfolio/fork"
+              className="flex items-center gap-2 uppercase hover:text-primary-icon"
+            >
+              <CgGitFork />
+              <span>Fork</span>
+            </Link>
+          </div>
         </div>
       </div>
     </div >

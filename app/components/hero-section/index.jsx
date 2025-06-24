@@ -6,6 +6,7 @@ import Link from "next/link";
 import { BsGithub, BsLinkedin, BsStackOverflow } from "react-icons/bs";
 import { MdDownload } from "react-icons/md";
 import { SiLeetcode } from "react-icons/si";
+import PropTypes from "prop-types";
 
 function HeroSection({ profile }) {
 
@@ -149,6 +150,19 @@ function HeroSection({ profile }) {
       </div>
     </section>
   );
+};
+HeroSection.propTypes = {
+  profile: PropTypes.shape({
+    avatar_url: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    bio: PropTypes.string,
+    company: PropTypes.string,
+    location: PropTypes.string,
+    followers: PropTypes.number,
+    following: PropTypes.number,
+    public_repos: PropTypes.number,
+    hireable: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  }).isRequired,
 };
 
 export default HeroSection;

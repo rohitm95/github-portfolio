@@ -1,5 +1,5 @@
 // @flow strict
-
+import PropTypes from 'prop-types';
 
 function SectionTitle({ title }) {
   return (
@@ -13,6 +13,10 @@ function SectionTitle({ title }) {
       </div>
     </div>
   );
+};
+
+SectionTitle.propTypes = {
+  title: PropTypes.string.isRequired,
 };
 
 export default SectionTitle;

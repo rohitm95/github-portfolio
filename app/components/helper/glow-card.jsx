@@ -1,5 +1,6 @@
 "use client"
 import { useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 const GlowCard = ({ children , identifier}) => {
   useEffect(() => {
@@ -75,6 +76,10 @@ const GlowCard = ({ children , identifier}) => {
       </article>
     </div>
   );
+};
+GlowCard.propTypes = {
+  children: PropTypes.node.isRequired,
+  identifier: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
 };
 
 export default GlowCard;

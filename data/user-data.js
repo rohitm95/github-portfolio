@@ -6,6 +6,6 @@ export const userData = {
   stackOverflow: 'https://stackoverflow.com/users/9880790/rohit-mamidwar',
   leetcode: "https://leetcode.com/u/rohitm95/",
   resume: "https://drive.google.com/file/d/1m9vQzf5iIm0d6Zn0UFgGanFrnxZvUaEL/view?usp=sharing",
-  skills: ['Angular', 'NodeJS', 'Firebase', 'Express'],
+  skills: ['Angular', 'NodeJS', 'Firebase', 'Express', 'AWS'],
   timezone: '+5.30'
 };

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaRegStar } from "react-icons/fa";
 import { FaCodeFork } from "react-icons/fa6";
 import { IoLinkSharp } from "react-icons/io5";
+import PropTypes from "prop-types";
 
 // @flow strict
 function ProjectCard({ project }) {
@@ -43,6 +44,16 @@ function ProjectCard({ project }) {
       </div>
     </Link>
   );
+};
+ProjectCard.propTypes = {
+  project: PropTypes.shape({
+    html_url: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string,
+    stargazers_count: PropTypes.number,
+    forks_count: PropTypes.number,
+    language: PropTypes.string,
+  }).isRequired,
 };
 
 export default ProjectCard;

@@ -10,27 +10,25 @@ function GitLanguage() {
       <SectionTitle title="GitHub Languages" />
 
       <div className="py-8 grid grid-cols-1 md:grid-cols-2 gap-5">
-        <>
-          <GlowCard identifier="repos-per-language">
-            <Image
-              src={`https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=${userData.githubUser}&theme=algolia`}
-              width={1080}
-              height={560}
-              alt="github repos-per-language"
-              className="rounded-lg lg:h-64 w-full bg-primary-bg"
-            />
-          </GlowCard>
+        <GlowCard identifier="repos-per-language">
+          <Image
+            src={`http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=${userData.githubUser}&theme=algolia`}
+            width={1080}
+            height={560}
+            alt="github repos-per-language"
+            className="rounded-lg lg:h-64 w-full bg-primary-bg"
+          />
+        </GlowCard>
 
-          <GlowCard identifier="most-commit-language">
-            <Image
-              src={`https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=${userData.githubUser}&theme=algolia`}
-              width={1080}
-              height={560}
-              alt="github most-commit-language"
-              className="rounded-lg lg:h-64 w-full bg-primary-bg"
-            />
-          </GlowCard>
-        </>
+        <GlowCard identifier="most-commit-language">
+          <Image
+            src={`http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=${userData.githubUser}&theme=algolia`}
+            width={1080}
+            height={560}
+            alt="github most-commit-language"
+            className="rounded-lg lg:h-64 w-full bg-primary-bg"
+          />
+        </GlowCard>
 
         <div className="md:col-span-2">
           <GlowCard identifier="top-langs">
